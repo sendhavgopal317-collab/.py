@@ -7,7 +7,7 @@ while i<=n:
         if j%2==0:
             print("*",end=" ")
         else:
-          print(j , end=" ")
+          print((j , end=" "))
         j=j+1
     i=i+1
 
