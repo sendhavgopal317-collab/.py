@@ -81,4 +81,4 @@ for i in range(k):
 r=input("enter language")
 for i in students:
     if r==i.language:
-        print(i.name,i.language,i.marks)
+        print(n,)
