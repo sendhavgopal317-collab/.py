@@ -1,17 +1,16 @@
-n=int(input("enter the number"))
-diff=0
-largest=0
-sum=0
-s=str(n)
-while n>9:
+s=input("enter string")
+subs=""
+i=-1
+s1=""
+for i in range( len(s)//2):
+    s1=s1+s[i]
+for i in range(len(s)-1):
+  if s.startswith(s1) and s.endswith(s1):
+   print(s1)
+   break
+  else:
+     s1=s1.remove(s1[-1])
+     
+    
    
-   d=n%10
-   n=n//10
-   d1=n%10
-   diff=abs(d1-d)
-   print(diff,end="")
-   sum=sum+diff
-   if diff>largest:
-     largest=diff
-print("sum is ", sum)
-print("largest", largest)
+ 

@@ -1,0 +1,14 @@
+from collections import namedtuple
+books=namedtuple("std",["book_id", "title","authore","price"])
+n=int(input("enter the number of books"))
+book=[]
+for i in range(n):
+    print("enter details ")
+    name=input("enter name ")
+    t=(input("enter title "))
+    auth=(input("enter authore "))
+    p=input("enter price")
+    s=books(name,t,auth,p)
+    book.append(s)
+for x in student:
+    print(x.name,"and",x.t,"and ", x.auth,x.p)
