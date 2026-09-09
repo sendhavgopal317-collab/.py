@@ -1,0 +1,15 @@
+FROM python:3.12
+
+WORKDIR /app
+
+COPY t.py .
+
+RUN pip install numpy
+
+CMD ["python", "t.py"]
+
+docker build -t my-python-app .
+
+
+
+C
